@@ -7,10 +7,47 @@
 	<link href="css/bootswatch.css" rel="stylesheet">
 	<link rel="icon" type="image/png" href="assets/Favicon.ico">
 	<link rel="stylesheet" href="css/animated-bg.css"> <!-- Resource style -->
+	<link href='http://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/Home/jquery.parallax-scroll.js"></script>
+	<style>
+	body {
+		font-family: 'Quicksand', sans-serif;
+		background: #e7e2dd;
+		margin: 0;
+	}
+	section {
+		width: 1200px;
+		margin: auto;
+		text-align: center;
+	}
+	article {
+		margin: auto;
+		position: relative;
+		width: 100%;
+		height: 370px;
+		overflow: hidden;
+		border-top: 4px solid #fff;
+		border-bottom: 4px solid #fff;
+	}
+	article img {
+		position: absolute;
+		bottom:0;
+		left: 0;
+	}
+	article p {
+		position: absolute;
+		width: 100%;
+		margin-top: 120px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		font-size: 6em;
+	}
+	</style>
 	<nav class="navbar navbar-default" role="navigation" style="margin-bottom: 0px">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -74,42 +111,46 @@
 			</div><!-- /.navbar-collapse -->
 		</div><!-- /.container-fluid -->
 	</nav>
-
 	<div class="large-header-container">
 		<div id="large-header" class="large-header">
 			<canvas id="demo-canvas"></canvas>
 			<div class="main-title" style="height:auto, width:auto;">
 				<img src="assets/Logo.png" style="display: inline-block; width: 75%;"> 
-				<div class="btn-group btn-group-justified" role="group" aria-label="...">
-					<div class="btn-group" role="group" style=>
-						<a href="Cancun/Attractions.html">
-						<button type="button" class="btn btn-primary">Cancun, Mexico</button>
-						</a>
-					</div>
-					<div class="btn-group" role="group">
-						<a href="Orlando/Attractions.html">
-						<button type="button" class="btn btn-warning">Orlando, USA</button>
-						</a>
-					</div>
-					<div class="btn-group" role="group">
-						<a href="Paris/Attractions.html">
-						<button type="button" class="btn btn-success">Paris, France</button>
-						</a>
-					</div>
-					<div class="btn-group" role="group">
-						<a href="Sydney/Attractions.html">
-						<button type="button" class="btn btn-danger">Sydney, Australia</button>
-						</a>
-					</div>
-					<div class="btn-group" role="group">
-						<a href="Tokyo/Attractions.html">
-						<button type="button" class="btn btn-info">Tokyo, Japan</button>
-						</a>
-					</div>
-				</div>
 			</div>
 		</div>
 	</div>
+	<section>
+		<a href="Cancun/Attractions.html">
+			<article>
+				<img src="assets/Home/Cancun.jpg" alt="Paris" data-parallax='{"y": 230}'/>
+				<p>Cancun, Mexico</p>	
+			</article>
+		</a>
+		<a href="Orlando/Attractions.html">
+			<article>
+				<img src="assets/Home/Orlando.jpg" alt="Paris" data-parallax='{"y": 230}'/>
+				<p>Orlando, USA</p>	
+			</article>
+		</a>
+		<a href="Paris/Attractions.html">
+			<article>
+				<img src="assets/Home/Paris.jpg" alt="Paris" data-parallax='{"y": 230}'/>
+				<p>Paris, France</p>	
+			</article>
+		</a>
+		<a href="Sydney/Attractions.html">
+			<article>
+				<img src="assets/Home/Sydney.jpg" alt="Paris" data-parallax='{"y": 230}'/>
+				<p>Sydney, Australia</p>	
+			</article>
+		</a>
+		<a href="Tokyo/Attractions.html">
+			<article>
+				<img src="assets/Home/Tokyo.jpg" alt="Paris" data-parallax='{"y": 230}'/>
+				<p>Tokyo, Japan</p>	
+			</article>
+		</a>
+	</section>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 	<script src="js/jquery-2.1.1.js"></script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
